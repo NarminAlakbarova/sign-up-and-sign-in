@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+.all {
+  background-color: #dcf2ed;
+  height: 100vh;
+}
+.all .sign-up {
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+.all .sign-up #signform {
+  row-gap: 10px;
+  padding: 50px;
+}
+.all .sign-up #signform input {
+  width: 100%;
+  padding: 7px;
+}
+.all .sign-up #signform .checkbox {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.all .sign-up #signform .checkbox input {
+  width: 20px;
+  height: 20px;
+  accent-color: #20484f;
+}
+.all .sign-up #signform #submit {
+  padding: 10px;
+  border: none;
+  background-color: #20484f;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
