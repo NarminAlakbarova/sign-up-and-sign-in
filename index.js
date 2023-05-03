@@ -111,12 +111,21 @@ books.forEach((item) => {
 });
 
 let allAddBtns = document.querySelectorAll(".btn-primary");
-
+let calc=document.querySelector("#calc")
+let count=0
 allAddBtns.forEach((item) => {
   item.addEventListener("click", function () {
-    let favoritedBooks = books.find((obj) => obj.id === +item.id);
-
-    allBooks.push(favoritedBooks);
-    localStorage.setItem("favoritedBooks", JSON.stringify(allBooks));
+    let selcObj = books.find((obj) => obj.id == item.id);
+    allBooks.includes(selcObj)
+    if (!allBooks.includes(selcObj)) {
+      let favoritedBooks = books.find((elem) => elem.id == item.id);
+      allBooks.push(favoritedBooks);
+      localStorage.setItem("favoritedBooks", JSON.stringify(allBooks));
+      count=allBooks.reduce((sum,book)=>sum+ +book.year,0)
+      calc.innerText=count
+    }
+    else(
+      alert('You have already added this book!!"')
+    )
   });
 });
