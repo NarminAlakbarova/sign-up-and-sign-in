@@ -7,7 +7,7 @@ form.addEventListener("submit", function (e) {
     (item) => item.name === allinp[0].value && item.password === allinp[1].value
   );
   if (userObj) {
-    window.location.href = "http://127.0.0.1:5501/index.html";
+    window.location.href = "http://127.0.0.1:5500/index.html";
   } else {
     alert("wrong user");
   }

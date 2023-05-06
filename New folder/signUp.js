@@ -19,7 +19,7 @@ form.addEventListener("submit", function (e) {
       };
       userData.push(userObj);
       localStorage.setItem("userData", JSON.stringify(userData));
-      window.location.href = "http://127.0.0.1:5501/login.html";
+      window.location.href = "http://127.0.0.1:5500/login.html";
     }
   }
 });
